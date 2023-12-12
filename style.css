@@ -1,0 +1,243 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: #fff;
+}
+
+.header
+{
+    width: 100%;
+    height: 100vh;
+    
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px , 8;
+    position: relative;}
+
+nav
+{
+    display: flex;
+    text-align: right;
+    justify-content: space-between;
+    padding: 20px 120px;
+    
+}
+.logo
+{
+     width: 150px;
+     cursor: pointer;
+     
+}
+
+nav button
+{
+    border: 0;
+    outline: 0;
+    color: #fff;
+    background-color: #db0001;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.language-btn
+{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff ;
+    padding: 7px 17px;
+}
+
+.language-btn img
+{
+    width: 10px ;
+    margin-left: 10px;
+}
+
+.header-content
+{
+    
+    
+    padding: 250px;
+    text-align: center;
+}
+
+.header-content h1
+{
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+}
+.header-content p
+{
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.email-signup
+{
+    background-color: #fff;
+    border-radius: 3px;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 260px;
+    overflow: hidden;
+   width: fit-content;
+
+}
+.email-signup input
+{
+    flex: 1;
+    border:  0;
+    width: 350px;
+    margin-left: 20px;
+}    
+
+.email-signup button
+{
+    background-color: #db0001;
+    color: #fff;
+    align-items: center;
+    padding: 10px 30px ;
+    border: 0px;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* ---------.features----------- */
+
+.features
+{
+   padding: 50px 125px;
+   font-size: 22px;
+   font-weight: 100;
+
+}
+.row 
+{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+
+}
+.text-col
+{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+
+}
+.img-col
+{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col img
+{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.break-line
+{
+    width: 100%;
+    height: 7px;
+    background-color: rgb(65, 64, 64);
+}
+
+/* .........faq......... */
+
+.faq
+{
+    margin-top: 40px;
+    /* padding-left: 500px; */
+    font-size: 22px;
+    text-align: center;
+}
+.Questions
+{
+    margin-top: 60px;
+    padding: 20px;
+    margin-left: 200px;
+    width: 1100px;
+    font-size: 50px;
+    background-color: rgb(28, 27, 27);
+    color: #fff;
+}
+
+.accordion
+{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accordion li
+{
+   list-style: none;
+   width: 100%;
+   padding: 5px;
+
+}
+
+.accordion li label
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px; 
+    transition: transform 0.5s;
+}
+
+input[type="radio"]
+{
+    display: none;
+}
+
+.accordion .content
+{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0 ;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::after
+{
+    transform: rotate(135deg);
+}
